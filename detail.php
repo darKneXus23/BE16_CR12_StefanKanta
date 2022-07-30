@@ -134,7 +134,6 @@ if ($_POST) {
                 </div>
             </div>
         </div>
-
         <div id="map" style="height:500px; width: 500px">
         </div>
         <?= $footer ?>
@@ -158,7 +157,6 @@ if ($_POST) {
                 position: {lat: <?= $row["latitude"]?>, lng: <?= $row["longitude"]?>},
                 map: map
             })
-            //48.196990032026896, 16.358946493756694  
         }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtjaD-saUZQ47PbxigOg25cvuO6_SuX3M&callback=initMap" async defer></script>
