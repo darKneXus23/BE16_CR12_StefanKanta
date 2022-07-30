@@ -26,9 +26,11 @@ if(mysqli_num_rows($result)  > 0) {
                     <img src='image/{$row["image"]}' class='card-img-top rounded-0'>
                     <div class='card-body'>
                         <h6 class='card-title'>{$row["title"]}</h6>
-                        <p class='card-text'>{$row["size"]}</p>
-                        <p class='card-text'>{$row["rooms"]}</p>
-                        <p class='card-text'>{$row["city"]}</p>
+                        <hr>
+                        <p class='card-text'>Area: {$row["size"]}m²</p>
+                        <p class='card-text'>Rooms: {$row["rooms"]}</p>
+                        <p class='card-text'>City: {$row["city"]}</p>
+                        <p class='card-text'>Price: {$row["price"]}€</p>
                         <hr>
                         <a href='detail.php?id={$row["id"]}&update'><button class='btn btn-primary btn-sm' type='button'>Edit</button></a>
                         <a href='detail.php?id={$row["id"]}&delete'><button class='btn btn-danger btn-sm' type='button'>Delete</button></a>
