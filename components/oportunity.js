@@ -3,7 +3,6 @@ const all = new XMLHttpRequest();
 all.open("get", 'api/displayAll.php');
 all.onload = function(){
                 const data = JSON.parse(all.responseText);
-                console.log(data[0]["title"]);
                 content = document.getElementById("content");
                 content.innerHTML = "";
                 for (i=0; i<data.length; i++) {
